@@ -1,0 +1,90 @@
+.select {
+	position: relative;
+	font-family: "DIN Pro";
+	min-height: 30px;
+}
+
+.select__item {
+	position: relative;
+}
+
+.select__title {
+	color: #727272;
+	font-weight: 700;
+	background-color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: right;
+}
+
+.select__value {
+	display: flex;
+	font-size: 15px;
+	height: 30px;
+	width: 167px;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 15px;
+	text-align: right;
+}
+
+.select__value span {
+	height: 1.2em;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	font-size: 15px;
+	padding-left: 10px;
+	font-family: sans-serif;
+	margin-top: 0px;
+
+}
+
+.select__value::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	border: 5px solid transparent;
+	border-top: 5px solid #727272;
+	right: 0;
+	top: 50%;
+	margin-top: -2px;
+	width: 10px;
+	height: 10px;
+}
+
+.select__options {
+	color: #727272;
+	font-weight: 500;
+	background-color: #fff;
+	display: none;
+	z-index: 2;
+	position: absolute;
+	top: 29px;
+	border-radius: 0 0 4px 4px;
+	min-width: 100%;
+	left: 0;
+	font-size: 15px;
+	padding: 5px 5px 5px 5px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.select__option {
+	cursor: pointer;
+	padding: 10px 10px;
+	margin: 0px 0px 0px 0px;
+
+}
+
+.select._active {
+	z-index: 5;
+}
+
+.select._active .select__value::before {
+	transform: rotate(-180deg);
+}
+
+.select._active.select__options {
+	display: block;
+}
