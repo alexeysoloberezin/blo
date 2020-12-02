@@ -6,15 +6,20 @@ $(document).ready(function(){
   //     $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
   //     e.preventDefault();
   //     });
+  $('.footer__list-title').click(function(){
+    this.parentElement.classList.toggle('footer__list-view')
+  });
+  $('.header__call').click(function(){
+    $('.window').addClass('window-active');
+  });
+  $('.popup__close').click(function(){
+    $('.window').removeClass('window-active');
+  });
   $('.burger').click(function(){
-    $('.header__nav').addClass('header__nav-active')
-    $('body').addClass('body-fixed')
-  });
-  $('.header__menu-close').click(function(){
-    $('.header__nav').removeClass('header__nav-active')
-    $('body').removeClass('body-fixed');
 
-  });
+    $('.header__nav').toggleClass('header__nav-active')    
+    $('.burger').toggleClass('active-burger')    
+  });  
   $('.blogaside__item').click(function(){
   this.classList.toggle('blogaside__item-active');
   });
@@ -52,14 +57,16 @@ $(document).ready(function(){
         breakpoint: 1140,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+          arrows: false,
         }
       },
       {
         breakpoint: 670,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows: false,
         }
       }    
     ]

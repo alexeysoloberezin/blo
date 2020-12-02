@@ -11,10 +11,28 @@
 </head>
 <body>
   <div class="wrapper">    
+    <div class="window">
+      <div class="container">
+        <div class="popup">
+          <div class="popup__close"></div>
+          <h3 class="popup__title">Заказать звонок</h3>
+          <p class="popup__text">Введите номер вашего телефона и мы 
+            свяжемся с вами в ближайшее время.</p>
+          <input class="popup__inp" type="text" placeholder="Телефон">
+          <button class="popup__btn">Заказать звонок</button>
+          <p class="popup__ps">Нажимая на кнопку, вы даете согласие на обработку <a class="popup__link" href="#">персональных данных</a></p>
+        </div>
+      </div>      
+    </div>    
     <header class="header">      
       <div class="header__row">
         <div class="container-big">
           <div class="header__row-line">
+            <div class="burger">
+              <span class="burger-line__top"></span>
+              <span class="burger-line__center"></span>
+              <span class="burger-line__bottom"></span>
+            </div>
             <div class="header__socials">
               <p class="header__socials-txt">Мы в Соцсетях:</p>
               <a class="header__social" href="#"><img src="image/icons/whatsapp.png" alt=""></a>
@@ -43,7 +61,7 @@
         <div class="header__top">
           <div class="container-big">
              <div class="header__top-line">
-                <a href="/" class="header__logo">
+                <a href="/" class="header__logo" data-da=".header__row-line, 1310, 1">
                   <img src="image/logo.png" alt="">
                 </a>
                 <nav class="header__nav">
@@ -63,8 +81,9 @@
                     <li class="header__item">
                       <a class="header__link" href="#">Бизнесу</a>
                     </li>
-                    <li class="header__item">
+                    <li class="header__item header__item-gift">
                       <a class="header__link" href="#">В подарок</a>
+                      <img src="image/icons/gift.png" alt="">
                     </li>
                     <li class="header__item">
                       <a class="header__link" href="#">Блог</a>
@@ -74,17 +93,10 @@
                     </li>
                     <li class="header__item">
                       <a class="header__link" href="#">Оплатить</a>
-                    </li>
-                    <li class="header__menu-close">    
-                      <svg fill="#fff"  viewBox="0 0 329.26933 329"  xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>                  
-                    </li>
+                    </li>                    
                   </ul>
                 </nav>
-                <div class="burger">
-                  <span class="burger-line__top"></span>
-                  <span class="burger-line__center"></span>
-                  <span class="burger-line__bottom"></span>
-                </div>
+                
               </div>
           </div>        
         </div>
@@ -186,7 +198,7 @@
                   <p>плитка</p>
                 </div>
               </div>
-              <div class="blogaside__search">
+              <div class="blogaside__search" data-da=".blog, 992, first">
                 <input class="blogaside__search-inp" type="text" placeholder="Поиск в блоге">
                 <button><img src="image/icons/search.png" alt=""></button>              
               </div>
@@ -248,6 +260,7 @@
           </div>
           <div class="courses__slider">
             <div  class="courses__slide">
+              <a class="courses__link-desc" href="#"></a>
               <div class="courses__image">
                 <img src="image/slider/1.jpg" alt="">
                 <p class="courses__name">Владимир Шопинский</p>
@@ -279,9 +292,12 @@
                     <p class="courses__box-txt">12 Отзывов</p>
                   </div>
                 </div>
+                <a class="courses__slide-btn_1 courses__slide-btn" href="#">Подробнее о курсе</a>
+                <a class="courses__slide-btn_2 courses__slide-btn" href="#">Записаться</a>
               </div>              
             </div>
             <div class="courses__slide">
+              <a class="courses__link-desc" href="#"></a>
               <div class="courses__image">
                 <img src="image/slider/2.jpg" alt="">
                 <p class="courses__name">Анна Котова</p>
@@ -313,9 +329,12 @@
                     <p class="courses__box-txt">10 Отзывов</p>
                   </div>
                 </div>
+                <a class="courses__slide-btn_1 courses__slide-btn" href="#">Подробнее о курсе</a>
+                <a class="courses__slide-btn_2 courses__slide-btn" href="#">Записаться</a>
               </div>             
             </div>
             <div  class="courses__slide">
+              <a class="courses__link-desc" href="#"></a>
               <div class="courses__image">
                 <img src="image/slider/3.jpg" alt="">
                 <p class="courses__name">Дмитрий Макеев</p>
@@ -347,9 +366,12 @@
                     <p class="courses__box-txt">14 Отзывов</p>
                   </div>
                 </div>
+                <a class="courses__slide-btn_1 courses__slide-btn" href="#">Подробнее о курсе</a>
+                <a class="courses__slide-btn_2 courses__slide-btn" href="#">Записаться</a>
               </div>              
             </div>
             <div  class="courses__slide">
+              <a class="courses__link-desc" href="#"></a>
               <div class="courses__image">
                 <img src="image/slider/2.jpg" alt="">
                 <p class="courses__name">Анна Котова</p>
@@ -381,9 +403,12 @@
                     <p class="courses__box-txt">10 Отзывов</p>
                   </div>
                 </div>
+                <a class="courses__slide-btn_1 courses__slide-btn" href="#">Подробнее о курсе</a>
+                <a class="courses__slide-btn_2 courses__slide-btn" href="#">Записаться</a>
               </div>             
             </div>
             <div class="courses__slide">
+              <a class="courses__link-desc" href="#"></a>
               <div class="courses__image">
                 <img src="image/slider/3.jpg" alt="">
                 <p class="courses__name">Дмитрий Макеев</p>
@@ -415,9 +440,12 @@
                     <p class="courses__box-txt">14 Отзывов</p>
                   </div>
                 </div>
+                <a class="courses__slide-btn_1 courses__slide-btn" href="#">Подробнее о курсе</a>
+                <a class="courses__slide-btn_2 courses__slide-btn" href="#">Записаться</a>
               </div>              
             </div>
             <div  class="courses__slide">
+              <a class="courses__link-desc" href="#"></a>
               <div class="courses__image">
                 <img src="image/slider/2.jpg" alt="">
                 <p class="courses__name">Анна Котова</p>
@@ -449,9 +477,12 @@
                     <p class="courses__box-txt">10 Отзывов</p>
                   </div>
                 </div>
+                <a class="courses__slide-btn_1 courses__slide-btn" href="#">Подробнее о курсе</a>
+                <a class="courses__slide-btn_2 courses__slide-btn" href="#">Записаться</a>
               </div>             
             </div>
             <div class="courses__slide">
+              <a class="courses__link-desc" href="#"></a>
               <div class="courses__image">
                 <img src="image/slider/3.jpg" alt="">
                 <p class="courses__name">Дмитрий Макеев</p>
@@ -483,6 +514,8 @@
                     <p class="courses__box-txt">14 Отзывов</p>
                   </div>
                 </div>
+                <a class="courses__slide-btn_1 courses__slide-btn" href="#">Подробнее о курсе</a>
+                <a class="courses__slide-btn_2 courses__slide-btn" href="#">Записаться</a>
               </div>              
             </div>
           </div>
@@ -513,7 +546,7 @@
             <h4 class="footer__title">наши тренинги</h4>
             <a class="footer__gift" href="#">Подарочный сертификат <img src="image/icons/gift.png" alt=""></a>
             <ul class="footer__list">
-              <li class="footer__list-title">Онлайн</li>
+              <li class="footer__list-title">Онлайн <span>показать</span></li>
               <li class="footer__item">
                 <a class="footer__link" href="#">Онлайн-курс ораторского искусства</a>
               </li>              
@@ -522,7 +555,7 @@
               </li>
             </ul>
             <ul class="footer__list">
-              <li class="footer__list-title">Офлайн</li>
+              <li class="footer__list-title">Офлайн <span>показать</span></li>
               <li class="footer__item">
                 <a class="footer__link" href="#">Курс ораторского искусства</a>
               </li>              
@@ -543,7 +576,7 @@
           <div class="footer__inner">
             <h4 class="footer__title">Адреса филиалов</h4>            
             <ul class="footer__list">
-              <li class="footer__list-title">Москва</li>
+              <li class="footer__list-title">Москва <span>показать</span></li>
               <li class="footer__item">
                 <p class="footer__link" >ул. Воздвиженка, д. 9</p>
               </li>              
@@ -567,7 +600,7 @@
               </li>
             </ul>
             <ul class="footer__list">
-              <li class="footer__list-title">Санкт-Петербург</li>              
+              <li class="footer__list-title">Санкт-Петербург <span>показать</span></li>              
               <li class="footer__item">
                 <p class="footer__link" >Кузнечный переулок, д. 6</p>
               </li>
