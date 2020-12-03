@@ -23,7 +23,7 @@ $(document).ready(function(){
     $('.window').removeClass('window-active');
   });
   $('.burger').click(function(){
-
+    $('.window2').toggleClass('window2-active')
     $('.header__nav').toggleClass('header__nav-active')    
     $('.burger').toggleClass('active-burger')  
     $('body').toggleClass('body-fixed');
@@ -79,4 +79,11 @@ $(document).ready(function(){
       }    
     ]
   });  
+
+  $('.article__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,  
+    dots: true,  
+  });
+
 });

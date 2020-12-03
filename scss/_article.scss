@@ -1,0 +1,341 @@
+.article {
+  min-width: 0;
+  color: #000000;
+  font-size: 19px;
+  line-height: 150%;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__image {}
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+
+  }
+
+  &__position {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__title {
+    color: #000000;
+    font-size: 34px;
+    font-family: $maz;
+    font-weight: 700;
+    letter-spacing: 0.34px;
+  }
+
+  &__post {
+    color: #010101;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 7px 0 7px 20px;
+  }
+
+  &__txt {
+    color: #000000;
+    line-height: 140%;
+    display: inline-block;
+
+    a {
+      color: #002cba;
+      text-decoration: underline;
+      display: inline-block;
+    }
+  }
+
+  &__subtitle {
+    color: #010101;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__mintitle {
+    color: #010101;
+    position: relative;
+    display: inline-block;
+    padding-right: 3px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 50%;
+      background-color: #002cba;
+      opacity: 0.1;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    color: #010101;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+    padding-left: 15px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $main;
+    }
+  }
+
+  &__quote {
+    color: #010101;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 155px;
+      height: 3px;
+      background: $main;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 155px;
+      height: 3px;
+      background: $main;
+    }
+  }
+
+  &__taxt {
+    color: #000000;
+    font-size: 19px;
+    line-height: 30px;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__slider {
+    width: 100%;
+    position: relative;
+    padding-bottom: 60px;
+
+    .slick-track {
+      display: flex;
+    }
+
+    .slick-list {
+      overflow: hidden;
+    }
+
+    .slick-arrow {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      background: none;
+      cursor: pointer;
+      background-image: url(../image/slider/arrow_right.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-size: 0;
+      width: 45px;
+
+      height: 45px;
+      background-position: center;
+    }
+
+    .slick-arrow.slick-prev {
+      transform: translateX(-100px) rotate(180deg);
+    }
+
+    .slick-arrow.slick-next {
+      transform: translateX(60px);
+    }
+
+    .slick-arrow.slick-disabled {
+      opacity: 0.6;
+    }
+
+    .slick-dots {
+      display: flex;
+      position: absolute;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .slick-dots li {
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
+      margin: 0 6px;
+    }
+
+    /* Активная точка */
+
+    /* Элемент точки */
+    .slick-dots li button {
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #c1c1c1;
+
+      font-size: 0;
+    }
+
+    .slick-dots .slick-active button {
+      background-color: $main;
+
+    }
+  }
+
+
+
+  &__slide {
+    outline: none;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__puncts {
+
+    font-weight: 400;
+    line-height: 30px;
+
+  }
+
+  &__table {
+    border-collapse: collapse;
+  }
+
+  &__table-box {
+    border: 1px solid #adadad;
+    width: 50%;
+    padding: 15px;
+    text-align: left;
+    color: #000000;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+
+
+  }
+
+  &__video {
+    width: 100%;
+    height: 420px;
+  }
+
+  &__video-ps {
+    color: #3d3d3d;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__link {
+    display: inline-block;
+    color: #002cba;
+    text-decoration: underline;
+
+   
+  }
+
+  &__socials {
+    display: flex;
+  }
+
+  &__social-link {
+    margin-right: 5px;
+    transition: .25s;
+    &:hover {
+      filter: grayscale(0.3);
+    }
+  }
+
+  &__tags {}
+
+  &__tag {}
+
+  &__sotitle {}
+
+  &__aricl-list {}
+
+  &__aricl-item {}
+
+  &__aricl-link {}
+
+  &__comment {}
+
+  &__comment-wrapper {}
+
+  &__comment-icon {}
+
+  &__comment-inner {}
+
+  &__comment-name {}
+
+  &__comment-line {}
+
+  &__comment-text {}
+
+  &__comment-link {}
+
+  &__comment-lvl2 {}
+
+  &__form {}
+
+  &__form-title {}
+
+  &__form-text {}
+
+  &__form-wrapper {}
+
+  &__form-inp {}
+
+  &__form-textarea {}
+
+  &__form-btn {}
+}
