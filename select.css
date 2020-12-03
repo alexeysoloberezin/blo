@@ -1,6 +1,6 @@
 .select {
 	position: relative;
-	font-family: "DIN Pro";
+	font-family: "DIN Pro" !important;
 	min-height: 30px;
 }
 
@@ -10,7 +10,7 @@
 
 .select__title {
 	color: #727272;
-	font-weight: 700;
+	font-weight: 500;
 	background-color: #fff;
 	cursor: pointer;
 	border-radius: 5px;
@@ -36,7 +36,7 @@
 	-webkit-box-orient: vertical;
 	font-size: 15px;
 	padding-left: 10px;
-	font-family: sans-serif;
+	font-family: "DIN Pro" !important;
 	margin-top: 0px;
 
 }

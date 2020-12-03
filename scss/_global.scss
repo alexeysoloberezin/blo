@@ -82,6 +82,20 @@ $din: 'DIN Pro';
 
 }
 
+.header__logo_2 {
+  display: none;
+}
+
+@media (max-width:470px) {
+  .header__logo_1 {
+    display: none;
+  }
+
+  .header__logo_2 {
+    display: block;
+  }
+}
+
 .wrapper {
   width: 100%;
   min-height: 100vh;
@@ -840,7 +854,7 @@ body {
   .burger {
     display: block;
     position: absolute;
-    top: 50%;
+    top: 41%;
     left: 0;
     transform: translateY(-50%);
   }
@@ -860,7 +874,7 @@ body {
 
   .header__nav {
     position: absolute;
-    top: 88px;
+    top: 105px;
     right: 0;
     display: none;
     width: 100vw;
@@ -1023,25 +1037,18 @@ body {
 
 @media (max-width:430px) {
   .header__row-line {
-    padding: 20px 0 20px 50px;
+    padding: 20px 0 20px 60px;
   }
 
   .header__nav {
-    top: 80px;
+    top: 100px;
   }
 
   .header__phone {
     margin-left: 0px;
   }
 
-  .header__logo {
-    display: flex;
-
-    img {
-      width: 75%;
-      margin: 0 auto;
-    }
-  }
+  .header__logo {}
 
   .burger {
     transform: translateY(-50%) scale(0.85);
