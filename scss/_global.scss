@@ -754,14 +754,31 @@ body {
   }
 }
 
-@media (max-width:1310px) {
+@media (max-width:1315px) {
+  .header__link {
+    font-size: 16px;
+  }
+
+  .header__body {
+    height: 340px;
+  }
+
+  .header__wrapper {
+    margin-top: 43px;
+  }
+
+  .header__top-line {
+    height: 75px;
+  }
+}
+
+@media (max-width:1220px) {
   .header__socials {
     margin-left: 20px;
   }
 
   .header__link {
-    margin: 0 0 0 0;
-    font-size: 16px;
+    margin: 0;
   }
 
   .header__row-line {
