@@ -285,7 +285,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 360px;
+    min-height: 360px;
   }
 
   &__inner {
@@ -417,7 +417,28 @@ body {
     font-family: $maz;
     font-weight: 700;
     font-size: 50px;
+    text-align: center;
+    line-height: 100%;
     letter-spacing: 0.47px;
+    position: relative;
+
+    span {
+      display: inline-block;
+      text-decoration: underline;
+    }
+  }
+
+  &__wrapper-two {
+    margin-top: 45px;
+
+    .header__title {
+      font-size: 34px !important;
+
+      span {
+        margin-bottom: 10px;
+      }
+    }
+
   }
 }
 
@@ -761,7 +782,7 @@ body {
   }
 
   .header__body {
-    height: 340px;
+    min-height: 340px;
   }
 
   .header__wrapper {
@@ -867,7 +888,7 @@ body {
 
   .header__body {
 
-    height: 260px;
+    min-height: 260px;
   }
 
   .bread {
@@ -1054,7 +1075,7 @@ body {
   }
 
   .header__body {
-    height: 230px;
+    min-height: 230px;
   }
 
   .header__wrapper {
