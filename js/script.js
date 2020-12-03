@@ -1,6 +1,18 @@
 
 $(document).ready(function(){   
   
+  const navOffset = $('.header__nav').offset().top;
+  $(window).scroll(function(){
+    
+    const scrolled = $(this).scrollTop();
+
+    if (scrolled > navOffset){
+      $('.wrapper').addClass('nav-fixed');
+    } else if (scrolled < navOffset){
+      $('.wrapper').removeClass('nav-fixed');
+    }
+  });
+
   $('.footer__list-title').click(function(){
     this.parentElement.classList.toggle('footer__list-view')
   });
@@ -13,7 +25,8 @@ $(document).ready(function(){
   $('.burger').click(function(){
 
     $('.header__nav').toggleClass('header__nav-active')    
-    $('.burger').toggleClass('active-burger')    
+    $('.burger').toggleClass('active-burger')  
+    $('body').toggleClass('body-fixed');
   });  
   $('.blogaside__item').click(function(){
   this.classList.toggle('blogaside__item-active');
