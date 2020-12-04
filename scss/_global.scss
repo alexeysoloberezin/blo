@@ -562,9 +562,10 @@ body {
   &__logo {
     flex-shrink: 0;
     margin-bottom: 15px;
+    width: 233px;
 
     img {
-      object-fit: contain;
+      object-fit: co;
     }
   }
 
