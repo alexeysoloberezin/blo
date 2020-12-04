@@ -98,6 +98,7 @@ $din: 'DIN Pro';
     left: 0;
     z-index: 300;
     width: 100%;
+    background: #fff;
   }
 
 }
@@ -1215,5 +1216,17 @@ body {
 .footer__list-view {
   li {
     display: flex;
+  }
+}
+
+.footer__list-show {
+  li {
+    display: flex;
+  }
+
+  .footer__list-title {
+    span {
+      display: none;
+    }
   }
 }
