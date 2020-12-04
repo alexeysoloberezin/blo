@@ -11,22 +11,41 @@
 
 @font-face {
   font-family: 'DIN Pro';
-  src: url('../fonts/DINPro-Medium.eot');
-  src: url('../fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DINPro-Medium.woff') format('woff'),
-    url('../fonts/DINPro-Medium.ttf') format('truetype');
-  font-weight: normal;
+  src: url('../fonts/din_pro_light.eot');
+  /* IE 9 Compatibility Mode */
+  src: url('../fonts/din_pro_light.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */
+    url('../fonts/din_pro_light.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/din_pro_light.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/din_pro_light.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/din_pro_light.svg#din_pro_light') format('svg');
+  /* Chrome < 4, Legacy iOS */
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'DIN Pro Bold';
+  font-family: 'DIN Pro';
+  src: url('../fonts/DINPro-Medium.eot');
+  src: url('../fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DINPro-Medium.woff') format('woff'),
+    url('../fonts/DINPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
   src: url('../fonts/DINPro-Bold.eot');
   src: url('../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/DINPro-Bold.woff') format('woff'),
     url('../fonts/DINPro-Bold.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -63,8 +82,25 @@ $maxWidth: 1950;
 
 $main: #002cba;
 $text: #727272;
-$maz: 'Mazzard';
-$din: 'DIN Pro';
+$maz: 'Mazzard',
+sans-serif;
+$din: 'DIN Pro',
+sans-serif;
+
+.header__item-buy {
+  a {
+    display: flex;
+    color: $main;
+    align-items: center;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -6px;
+      right: -19px;
+    }
+  }
+}
 
 .window {
   width: 100vw;
@@ -330,7 +366,7 @@ body {
 
   &__tel {
     margin-left: 5px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   &__call {
@@ -583,14 +619,14 @@ body {
   &__ps {
     color: #9a9da1;
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 
   }
 
   &__title {
     color: #000000;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.14px;
     margin-bottom: 15px;
@@ -747,7 +783,7 @@ body {
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 1.38px;
-
+    padding-bottom: 4px;
     img {
       margin-left: 10px;
     }
@@ -872,7 +908,12 @@ body {
   .header__logo {
     flex: 0 0 auto;
   }
-
+  .header__item-buy a img{
+    position: relative;
+    top: initial;
+    right: initial;
+    margin-left: 10px;
+  }
   .header__row-line {
     flex-direction: column;
     position: relative;

@@ -92,8 +92,8 @@
                     <li class="header__item">
                       <a class="header__link" href="#">Контакты</a>
                     </li>
-                    <li class="header__item">
-                      <a class="header__link" href="#">Оплатить</a>
+                    <li class="header__item header__item-buy">
+                      <a class="header__link" href="#">Оплатить<img src="image/Слой_1818.svg" alt=""></a>
                     </li>                    
                   </ul>
                 </nav>
@@ -246,7 +246,8 @@
               <p class="questions__text">Поможем выбрать курс, расскажем о процессе обучения и стоимости.</p>
             </div>
             <form class="questions__form" action="#">
-              <input class="questions__input" type="text" placeholder="Телефон">
+              <p class="questions__form-error">Ой, Вы ввели неполный номер</p>
+              <input id="questions__input" class="questions__input" type="text" placeholder="Телефон">
               <button class="questions__btn"><span>Заказать</span></button>
               <p class="questions__ps">Нажимая на кнопку, вы даете согласие на обработку</p>
               <a class="questions__ps-link" href="#">персональных данных</a>
@@ -548,7 +549,7 @@
           </div>
           <div class="footer__inner">
             <h4 class="footer__title">наши тренинги</h4>
-            <a class="footer__gift" href="#">Подарочный сертификат <img src="image/icons/gift.png" alt=""></a>
+            <a class="footer__gift" href="#">Подарочный сертификат <img src="image/icon/gift.svg" alt=""></a>
             <ul class="footer__list footer__list-show">
               <li class="footer__list-title">Онлайн <span>показать</span></li>
               <li class="footer__item">
@@ -635,7 +636,7 @@
               ораторских навыков
             </p>
             <input class="footer__email" type="email" name="email" placeholder="Email">
-            <button class="footer__btn">Подписаться <img src="image/svg/tel.png" alt=""></button>
+            <button class="footer__btn"><span>Подписаться</span><img src="image/svg/tel.png" alt=""></button>
             <p class="footer__peron">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a></p>
           </div>
         </div>
@@ -650,8 +651,12 @@
   <script  src="js/slick.min.js"></script>
   <script  src="js/dynamicAdapt_old.js"></script>
   <script  src="select.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script  src="js/script.js"></script>
-  
+  <script >
+    
+   
+  </script>
 </body>
  
 </html>

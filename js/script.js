@@ -1,6 +1,13 @@
 
 $(document).ready(function(){   
+  // var element = document.getElementById('questions__input');
+  // var maskOptions = {
+  //   mask: '+{7} (000) 000-00-00'
+  // };
+  // var mask = IMask(element, maskOptions);
   
+  $('#questions__input').mask("+7 (999) 99-99-999");
+
   const navOffset = $('.header__nav').offset().top;
   $(window).scroll(function(){
     
