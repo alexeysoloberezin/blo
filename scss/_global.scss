@@ -86,19 +86,10 @@ $din: 'DIN Pro';
   display: none;
 }
 
-@media (max-width:470px) {
-  .header__logo_1 {
-    display: none;
-  }
-
-  .header__logo_2 {
-    display: block;
-  }
-}
 
 @media (min-width:976px) {
   .nav-fixed .header__body {
-    margin-top: 55px;
+    padding-top: 85px;
   }
 
   .nav-fixed .header__top {
@@ -370,7 +361,6 @@ body {
 
   &__top {
     background: rgba(255, 255, 255, 0.7);
-
   }
 
   &__top-line {
@@ -381,7 +371,9 @@ body {
   }
 
   &__logo {
-    flex-shrink: 0;
+    flex: 0 0 230px;
+    width: 230px;
+    height: 38px;
   }
 
   &__nav {}
@@ -797,11 +789,17 @@ body {
 @media (max-width:1200px) {
   .header__link {
     margin-left: 12px;
+    font-size: 15px;
+  }
+
+  .header__logo {
+    flex: 0 0 210px;
+    width: 210px;
   }
 }
 
 
-@media (max-width:1152px) {
+@media (max-width:1102px) {
   .header__socials {
     margin-left: 20px;
   }
@@ -869,7 +867,9 @@ body {
 }
 
 @media (max-width:975px) {
-  .header__logo {}
+  .header__logo {
+    flex: 0 0 auto;
+  }
 
   .header__row-line {
     flex-direction: column;
@@ -919,7 +919,7 @@ body {
   .burger {
     display: block;
     position: absolute;
-    top: 41%;
+    top: 37%;
     left: 0;
     transform: translateY(-50%);
     z-index: 3000;
@@ -1165,6 +1165,10 @@ body {
     width: 100%;
     min-width: initial;
   }
+
+  .header__logo {
+    width: 210px;
+  }
 }
 
 @media (max-width:430px) {
@@ -1186,13 +1190,7 @@ body {
     transform: translateY(-50%) scale(0.85);
   }
 
-  // .footer__logo-2 {
-  //   display: block;
-  // }
 
-  // .footer__logo-1 {
-  //   display: none;
-  // }
 }
 
 
