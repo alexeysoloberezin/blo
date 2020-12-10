@@ -1,7 +1,7 @@
 $(document).ready(function(){   
   $('.photo__slider').slick({
     slidesToShow: 4,
-    slidesToScroll: 2,  
+    slidesToScroll: 1,  
     dots: true, 
     infinite: false,  
     swipe: false,    
@@ -10,7 +10,7 @@ $(document).ready(function(){
         breakpoint: 800,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           infinite: false,          
         }
       },
