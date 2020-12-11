@@ -1224,12 +1224,13 @@ body {
   right: -10px;
 }
 .payment__pay-inner {
-  margin-top: -2px;
-  margin-left: 15px;
+  margin-top: 5px;
+  justify-content: center;
 }
 .payment__pay-wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   color: #666666;
   font-size: 19px;
@@ -1238,6 +1239,7 @@ body {
 }
 .payment__pay-wrapper img {
   margin: 0 5px;
+  max-width: initial;
 }
 .payment__pay-wrapper p {
   transform: translate(2px, -1px);
@@ -1363,6 +1365,11 @@ body {
   display: block;
 }
 
+@media (max-width: 350px) {
+  .payment__pay-wrapper img {
+    transform: scale(0.85);
+  }
+}
 .footer {
   padding-top: 60px;
   border-top: 1px solid #ddd;

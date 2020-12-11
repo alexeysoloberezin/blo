@@ -1447,13 +1447,14 @@ body {
   }
 
   &__pay-inner {
-    margin-top: -2px;
-    margin-left: 15px;
+    margin-top: 5px;
+    justify-content: center;
   }
 
   &__pay-wrapper {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     color: #666666;
     font-size: 19px;
@@ -1462,6 +1463,7 @@ body {
 
     img {
       margin: 0 5px;
+      max-width: initial;
     }
 
     p {
@@ -1608,6 +1610,11 @@ body {
   }
 }
 
+@media (max-width:350px) {
+  .payment__pay-wrapper img {
+    transform: scale(0.85);
+  }
+}
 
 // footer-------------------------------------
 .footer {
