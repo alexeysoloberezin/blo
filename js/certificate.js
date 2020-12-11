@@ -38,6 +38,12 @@ $(document).ready(function(){
     infinite: false,  
     
   });
+  $('#header__form-phone').mask("+7 (999) 99-99-999");
+  $('#certorder-phone').mask("+7 (999) 99-99-999");
+  $('#payment__phone').mask("+7 (999) 99-99-999");
+  $('.popup__inp').mask("+7 (999) 99-99-999");
+  
+
   var $page = $('html, body');
   $('a[href*="#"]').click(function() {
       $page.animate({

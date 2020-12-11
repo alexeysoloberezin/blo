@@ -19,7 +19,11 @@
           <h3 class="popup__title">Заказать звонок</h3>
           <p class="popup__text">Введите номер вашего телефона и мы   
             свяжемся с вами в ближайшее время.</p>
-          <input class="popup__inp" type="text" placeholder="Телефон">
+          <div class="wrappper-input input-error wrappper-input-ok">
+            <input class="popup__inp" type="text" placeholder="Телефон">
+            <p class="wrappper-input-error">Ой, Вы ввели неполный номер</p>
+          </div>
+          
           <button class="popup__btn">Заказать звонок</button>
           <p class="popup__ps">Нажимая на кнопку, вы даете согласие на обработку <a class="popup__link" href="#">персональных данных</a></p>
         </div>
@@ -73,6 +77,8 @@
             <option value="Москва">Москва</option>
             <option value="Cанкт-петербург">санкт-петербург</option>
             <option value="Екатеринбург">екатеринбург</option>
+            <option value="Казань">Казань</option>
+            <option value="Новосибирск">Новосибирск</option>            
             <option value="Нижний Новгород">нижний новгород</option>
           </select>          
           <p class="header__call" href="#">Заказать  звонок</p>
@@ -102,11 +108,11 @@
             </div>
             <form class="header__body-form">
               <h3 class="header__form-title">Заказать&nbsp;сертификат</h3>
-              <div class="wrappper-input ">
+              <div class="wrappper-input input-error wrappper-input-ok">
                 <input class="header__form-input global-input" type="text" placeholder="Имя">
                 <p class="wrappper-input-error">Ой, Вы ввели неполное имя</p>
               </div>    
-              <div class="wrappper-input ">
+              <div class="wrappper-input input-error wrappper-input-ok">
                 <input id="header__form-phone" class="header__form-input global-input" type="text" placeholder="Телефон">
                 <p class="wrappper-input-error">Ой, Вы ввели неполный номер</p>
               </div>                        
@@ -162,12 +168,12 @@
         <div class="container">
           <div class="certorder__wrapper">
             <h3 class="certorder__title"><span>Заказать&nbsp;сертификат</span><br>  на обучение ораторскому искусству</h3>
-            <form class="certorder__form">
-              <div class="wrappper-input ">
+            <form class="certorder__form ">
+              <div class="wrappper-input input-error wrappper-input-ok">
                 <input class="certorder-input global-input" type="text" placeholder="Имя">
                 <p class="wrappper-input-error">Ой, Вы ввели неполное имя</p>
               </div>
-              <div class="wrappper-input">
+              <div class="wrappper-input input-error wrappper-input-ok">
                 <input id="certorder-phone" class="certorder-input global-input" type="text" placeholder="Телефон">
                 <p class="wrappper-input-error">Ой, Вы ввели неполный номер</p>
               </div>             
@@ -187,7 +193,7 @@
             <p class="contacts__text">г. Москва, Берсеневский пер., дом 2, стр. 1</p>    
             <p class="contacts__text">Метро «Кропоткинская» и «Полянка»</p> 
             <div class="contacts__wrapper">
-              <div class="contacts__inner">
+              <div class="contacts__inner contacts__inner-1">
                 <img src="image/certificats/m.svg" alt="">
                 <p>2 минуты от метро</p>
               </div>
@@ -225,9 +231,9 @@
                 <option value="5 000 р.">5 000 р.</option>
               </select>
             </div>
-            <div class="wrappper-input"><input type="text" class="payment__input" placeholder="Имя Фамилия"><p class="wrappper-input-error">Ой, Вы ввели неполное имя</p></div>
-            <div class="wrappper-input "><input id="payment__phone" type="text" class="payment__input" placeholder="Телефон"><p class="wrappper-input-error">Ой, Вы ввели неполный номер</p></div>
-            <div class="wrappper-input"><input type="text" class="payment__input" placeholder="Email"><p class="wrappper-input-error">Ой, Вы ввели неполный email</p></div>
+            <div class="wrappper-input input-error wrappper-input-ok"><input type="text" class="payment__input" placeholder="Имя Фамилия"><p class="wrappper-input-error">Ой, Вы ввели неполное имя</p></div>
+            <div class="wrappper-input  input-error wrappper-input-ok"><input id="payment__phone" type="text" class="payment__input" placeholder="Телефон"><p class="wrappper-input-error">Ой, Вы ввели неполный номер</p></div>
+            <div class="wrappper-input input-error wrappper-input-ok"><input type="text" class="payment__input" placeholder="Email"><p class="wrappper-input-error">Ой, Вы ввели неполный email</p></div>
             <div class="payment__line-wrapper">
               <div class="payment__line-inner">
                 <input id="payment__line-checkbox" class="payment__line-checkbox" type="checkbox" >
@@ -364,7 +370,11 @@
               полезную рассылку для развития своих 
               ораторских навыков
             </p>
-            <input class="footer__email" type="email" name="email" placeholder="Email">
+            <div class="wrappper-input input-error wrappper-input-ok">
+              <input class="footer__email" type="email" name="email" placeholder="Email">
+              <p class="wrappper-input-error">Ой, Вы ввели неполный Email</p>
+            </div>
+            
             <button class="footer__btn"><span>Подписаться</span><img src="image/svg/tel.png" alt=""></button>
             <p class="footer__peron">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a></p>
           </div>
